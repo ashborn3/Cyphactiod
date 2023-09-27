@@ -18,5 +18,11 @@
     <ClCompile Include="Cyphactiod.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cypher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

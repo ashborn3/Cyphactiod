@@ -1,6 +1,11 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 
-void readFile(std::ifstream& irFile);
-
-void writeFile(std::ofstream owFile);
+void encryptFile(std::ifstream& irFile, std::ofstream& owFile) {
+	std::string str;
+	while (std::getline(irFile, str)) {
+		//Encrypt the string
+		owFile << str << "\n";
+	}
+}
