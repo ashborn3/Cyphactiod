@@ -131,6 +131,10 @@
     <ClCompile Include="cypher.cpp" />
     <ClCompile Include="reader.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cypher.h" />
+    <ClInclude Include="reader.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
