@@ -45,20 +45,23 @@ int main()
     std::string inputPath, outputPath, passwd;
     bool mode;
 
-    std::cout << "Enter File Path : ";
-    std::cin >> inputPath;
-    std::cout << "Enter Output File Path : ";
-    std::cin >> outputPath;
-    std::cout << "Enter PASSWORD : ";
-    std::cin >> passwd;
-    std::cout << "Enter Encrypt(0) Decrypt(1) : ";
-    std::cin >> mode;
+    while (true) {
 
-    Cyphactiod cypher(inputPath, outputPath, passwd, mode);
+        std::cout << "Enter File Path : ";
+        std::cin >> inputPath;
+        std::cout << "Enter Output File Path : ";
+        std::cin >> outputPath;
+        std::cout << "Enter PASSWORD : ";
+        std::cin >> passwd;
+        std::cout << "Enter Encrypt(0) Decrypt(1) : ";
+        std::cin >> mode;
 
-    cypher.cypherFile();
+        Cyphactiod cypher(inputPath, outputPath, passwd, mode);
 
-    std::cout << "File Encrypted\n";
+        cypher.cypherFile();
+
+        std::cout << "File Encrypted\n";
+    }
 
     return 0;
 }
